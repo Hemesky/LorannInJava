@@ -5,7 +5,7 @@ import java.util.List;
 
 import model.Example;
 import model.IModel;
-import view.IView;
+import view.IViewFacade;
 
 /**
  * <h1>The Class ControllerFacade provides a facade of the Controller component.</h1>
@@ -16,7 +16,7 @@ import view.IView;
 public class ControllerFacade implements IController {
 
     /** The view. */
-    private final IView  view;
+    private final IViewFacade  view;
 
     /** The model. */
     private final IModel model;
@@ -29,7 +29,7 @@ public class ControllerFacade implements IController {
      * @param model
      *            the model
      */
-    public ControllerFacade(final IView view, final IModel model) {
+    public ControllerFacade(final IViewFacade view, final IModel model) {
         super();
         this.view = view;
         this.model = model;
@@ -60,7 +60,7 @@ public class ControllerFacade implements IController {
      *
      * @return the view
      */
-    public IView getView() {
+    public IViewFacade getView() {
         return this.view;
     }
 

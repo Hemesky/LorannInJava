@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
  * @author Jean-Aymeric DIET jadiet@cesi.fr
  * @version 1.0
  */
-public class ViewFacade implements IView {
+public class ViewFacade implements IViewFacade {
 
     /**
      * Instantiates a new view facade.

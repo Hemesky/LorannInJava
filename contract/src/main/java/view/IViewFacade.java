@@ -1,12 +1,14 @@
 package view;
 
+import model.IMobile;
+
 /**
  * <h1>The Interface IView.</h1>
  *
  * @author Jean-Aymeric DIET jadiet@cesi.fr
  * @version 1.0
  */
-public interface IView {
+public interface IViewFacade {
 
     /**
      * Display message.
@@ -15,4 +17,10 @@ public interface IView {
      *            the message
      */
     void displayMessage(String message);
+    
+    void OpenGateMAJ();
+    void PowerSpawn(IMobile power);
+    void setOrderPerformer(IOrderPerformer orderPerfomer);
+    
+    
 }
