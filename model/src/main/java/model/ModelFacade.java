@@ -3,7 +3,7 @@ package model;
 import java.sql.SQLException;
 import java.util.List;
 
-import model.dao.ExampleDAO;
+import dao.StoredProcedureDAO;
 
 /**
  * <h1>The Class ModelFacade provides a facade of the Model component.</h1>
@@ -26,7 +26,7 @@ public final class ModelFacade implements IModel {
      */
     @Override
     public Example getExampleById(final int id) throws SQLException {
-        return ExampleDAO.getExampleById(id);
+        return StoredProcedureDAO.getExampleById(id);
     }
 
     /*
@@ -35,7 +35,7 @@ public final class ModelFacade implements IModel {
      */
     @Override
     public Example getExampleByName(final String name) throws SQLException {
-        return ExampleDAO.getExampleByName(name);
+        return StoredProcedureDAO.getExampleByName(name);
     }
 
     /*
@@ -44,7 +44,7 @@ public final class ModelFacade implements IModel {
      */
     @Override
     public List<Example> getAllExamples() throws SQLException {
-        return ExampleDAO.getAllExamples();
+        return StoredProcedureDAO.getAllExamples();
     }
 
 }
