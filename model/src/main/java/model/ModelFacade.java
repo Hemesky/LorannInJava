@@ -3,8 +3,8 @@ package model;
 import java.sql.SQLException;
 import java.util.List;
 
-import dao.StoredProcedureDAO;
-
+import model.dao.StoredProcedureDAO;
+private ILevel level;
 /**
  * <h1>The Class ModelFacade provides a facade of the Model component.</h1>
  *
