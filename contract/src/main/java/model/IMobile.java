@@ -2,7 +2,9 @@ package model;
 
 import java.awt.Point;
 
-public interface IMobile {
+import showboard.IPawn;
+
+public interface IMobile extends IPawn, IElement {
 
 	
 	
@@ -31,7 +33,7 @@ public interface IMobile {
 	Boolean hasTouchedDoor(); // PERMEABILITY IS OPENGATE!
 	
 	void die(); // Kill the player in order to restart the game.
-	
+	void alive();
 	
 	Point getPosition();
 	

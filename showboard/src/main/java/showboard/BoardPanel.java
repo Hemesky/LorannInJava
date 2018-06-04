@@ -16,40 +16,6 @@ import java.util.Observer;
 
 import javax.swing.JPanel;
 
-/**
- * <h1>The Class BoardPanel.</h1>
- * <p>
- * This class represents the board as an image. It extends JPanel.
- * </p>
- * <p>
- * It uses an ISquare[][] as board, a List&lt;IPawn&gt; as list of pawns.
- * </p>
- * <p>
- * If an ISquare has not an image, the noImage is used.
- * </p>
- * <p>
- * The same noImage is used to illustrate the board's edge.
- * </p>
- * <p>
- * The class implements Observer interface to observe the Observable who stores the board's data. At
- * each update, the image is build.
- * </p>
- * <p>
- * The all image isn't display, just the zone represented by the display Rectangle is show in the
- * panel. If this Rectangle is higher than the board dimension, the noImage is also used.
- * </p>
- *
- * @author Anne-Emilie DIET
- * @version 3.0
- * @see JPanel
- * @see Dimension
- * @see Rectangle
- * @see Image
- * @see ISquare
- * @see IPawn
- * @see Observer
- * @see Observable
- */
 class BoardPanel extends JPanel implements Observer {
 
     /** The Constant serialVersionUID. */
